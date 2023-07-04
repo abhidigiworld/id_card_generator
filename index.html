@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID card generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="outer">
+        <div class="title">ID Card Generator</div>
+        <div class="data">
+                <div class="one">
+                    <h1 class="onehead">Enter Student Details</h1>
+                    <form action="" id="iddata">
+                        <label for="fname">Enter Name</label><br>
+                        <input type="text" name="fname" id="fname" placeholder="Abhishek Sharma"><br>
+                        <label for="clgname">Enter College Name</label><br>
+                        <input type="text" name="clgname" id="clgname" placeholder="L.P.U."><br>
+                        <label for="locate">Enter Location</label><br>
+                        <input type="text" name="locate" id="locate" placeholder="JALANDHAR"><br>
+                        <label for="pic">Upload Student's picture : </label><br>
+                        <input type="file" name="pic" id="pic" accept="image/*" onchange="loadImage(event)"><br>
+                        <button type="submit"  id="submiter">Generate Card</button>
+                    </form>
+                </div>
+                <div class="two">
+                    <div class="title2">
+                        Generate ID Card
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                                <img src="" alt="passport size photo" id="photo" />
+                        </div>
+                        <div class="details">
+                            <span class="text1">Name:<span id="text2">ABHISHEK SHARMA</span></span><br>
+                            <span class="text1">College Name:<span id="text3">L.P.U.</span></span><br>
+                            <span class="text1">Location:<span id="text4">JALANDHAR</span></span><br>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

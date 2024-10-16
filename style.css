@@ -31,6 +31,8 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 420px;
+
 }
 .one,.two{
     border-left: 1px solid gray;
